@@ -1,0 +1,85 @@
+// main: ../style.less
+
+.works {
+    margin-bottom: 3.5rem;
+    margin-top: 9rem;
+
+}
+
+.works__nav {
+    margin-bottom: 1.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.works__nav-link {
+    margin: 0 1.2rem;
+    font-size: 0.8rem;
+    color: rgba(@black, 0.7);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.portfolio {
+    margin: 0 -1rem 2.8rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio__col {
+    flex-basis: 33.33333%;
+    padding: 1rem;
+
+    @media @mobile {
+        flex-basis: 50%;
+    }
+
+    @media @mobile-sm {
+        flex-basis: 100%;
+    }
+}
+
+.work {
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(#000, 0.25);
+    overflow: hidden;
+    transition: box-shadow 0.3s linear;
+
+    &:hover {
+        box-shadow: 0 0 15px rgba(#000, 0.25);
+    }
+
+    @media @mobile {
+        margin: 0 auto;
+        max-width: 370px;
+    }
+}
+
+.work__content {
+    padding: 1rem;
+}
+
+.work__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.work__cat {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: @black;
+    text-transform: uppercase;
+}
+
+.work__title {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.06rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}

@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+
+<!--Header-->
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="user">
+
+                <div class="user__avatar">
+                    <img src="https://placehold.it/57/333" alt="">
+                </div>
+                <div class="user__content">
+                    <div class="user__name">Lewis <br> Nathaniel</div>
+                    <div class="user__prof">UI &amp; UX Designer</div>
+                </div>
+            </div>
+
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#works">work</a>
+                <a class="nav__link" href="#" data-scroll="#about">about me</a>
+                <a class="nav__link" href="#" data-scroll="#news">blog</a>
+                <a class="nav__link" href="#" data-scroll="#contact">contact</a>
+                <a class="nav__link nav__link--btn" href="#" data-modal="#hire_me">hire me</a>
+            </nav>
+
+            <button type="button" class="burger" id="navToggle">
+                <img class="burger__icon" src="images/burger.svg" alt="">
+            </button>
+        </div>
+    </div>
+</header>
+
+<!--Intro-->
+<section class="intro" id="intro">
+    <div class="container">
+
+        <div class="intro__inner">
+            <div class="intro__content">
+                <h2 class="intro__subtitle">Hello, I'm</h2>
+                <h1 class="intro__title">Lewis Nathaniel</h1>
+                <div class="intro__text">Ui &amp; UX Designer</div>
+
+                <div class="social">
+                    <a class="social__link" href="#">
+                        <img src="images/social/Be.jpg">
+                    </a>
+                    <a class="social__link" href="#">
+                        <img src="images/social/Dribbble.jpg">
+                    </a>
+                    <a class="social__link" href="#">
+                        <img src="images/social/In.jpg">
+                    </a>
+                    <a class="social__link" href="#">
+                        <img src="images/social/Fb.jpg">
+                    </a>
+                    <a class="social__link" href="#">
+                        <img src="images/social/Instagram.jpg">
+                    </a>
+                    <a class="social__link" href="#">
+                        <img src="images/social/Twitter.jpg">
+                    </a>
+                </div>
+
+                    <a class="btn" href="#" data-modal="#hire_me">Hire me</a>
+                    <a class="btn" href="#" data-modal="#resume">See my resume</a>
+
+            </div>
+
+            <img class="intro__photo" src="images/designer_photo.png" alt="">
+
+        </div><!-- /.intro__inner  -->
+    </div><!-- /.container  -->
+</section>
+
+<!--Works-->
+<div class="works" id="works">
+    <div class="container">
+
+        <div class="works__nav">
+            <a class="works__nav-link" href="#" data-filter="all">All</a>
+            <a class="works__nav-link" href="#" data-filter="app">App</a>
+            <a class="works__nav-link" href="#" data-filter="website">Websites</a>
+            <a class="works__nav-link" href="#" data-filter="intarection">Intarection</a>
+        </div>
+
+        <div class="portfolio">
+            <div class="portfolio__col" data-cat="app">
+                <div class="work" data-modal="#project_1">
+                    <img class="work__img" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category App</div>
+                        <div class="work__title">Project title
+                            <div class="work__date">2018</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="website">
+                <div class="work" data-modal="#project_2">
+                    <img class="work__img" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category Website</div>
+                        <div class="work__title">Project title
+                            <div class="work__date">2018</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="intarection">
+                <div class="work" data-modal="#project_3">
+                    <img class="work__img" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category Intarection</div>
+                        <div class="work__title">Project title
+                            <div class="work__date">2018</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="intarection">
+                <div class="work" data-modal="#project_4">
+                    <img class="work__img" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category Intarection</div>
+                        <div class="work__title">Project title
+                            <div class="work__date">2018</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="website">
+                <div class="work" data-modal="#project_5">
+                    <img class="work__img" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category Website</div>
+                        <div class="work__title">Project title
+                            <div class="work__date">2018</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="app">
+                <div class="work" data-modal="#project_6">
+                    <img class="work__img" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category App</div>
+                        <div class="work__title">Project title
+                            <div class="work__date">2018</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="website">
+                <div class="work" data-modal="#project_7">
+                    <img class="work__img" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category Website</div>
+                        <div class="work__title">Project title
+                            <div class="work__date">2018</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="website">
+                <div class="work" data-modal="#project_8">
+                    <img class="work__img" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category Website</div>
+                        <div class="work__title">Project title
+                            <div class="work__date">2018</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio__col" data-cat="app">
+                <div class="work" data-modal="#project_9">
+                    <img class="work__img" src="https://placehold.it/370x300" alt="">
+                    <div class="work__content">
+                        <div class="work__cat">Category App</div>
+                        <div class="work__title">Project title
+                            <div class="work__date">2018</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /.portfolio  -->
+        <div class="text-center">
+            <a class="btn btn--sm" href="">Load more work</a>
+        </div>
+
+    </div><!-- /.container  -->
+</div><!-- /.works  -->
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="about__inner">
+            <div class="about__photo">
+                <img class="img" src="images/about/about__photo.png" alt="">
+            </div>
+            <div class="about__content">
+                <h3 class="about__title">About me</h3>
+                <h2 class="about__bigtitle">Who am i</h2>
+                <div class="about__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla distinctio ratione possimus, aperiam maiores fuga sit soluta exercitationem, totam molestias fugiat eveniet. Molestiae eum nisi, dolores quidem rem modi distinctio.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla distinctio ratione possimus, aperiam maiores fuga sit soluta exercitationem, totam molestias fugiat eveniet. Molestiae eum nisi, dolores quidem rem modi distinctio.</p>
+                </div>
+
+                <a class="btn" href="#" data-modal="#hire_me">hire me</a>
+                <a class="btn" href="#" data-modal="#resume">see my resume</a>
+
+            </div>
+        </div><!-- /.about__inner  -->
+    </div><!-- /.container  -->
+</section>
+
+<!--Reviews-->
+<div class="reviews">
+    <div class="container">
+
+        <div class="reviews__item">
+            <div class="reviews__text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam iste est perspiciatis, blanditiis reiciendis saepe ratione, nesciunt ab atque perferendis incidunt, porro nulla ex tempora facere autem alias doloremque, tenetur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam iste est perspiciatis, blanditiis reiciendis saepe ratione, nesciunt ab atque perferendis incidunt, porro nulla ex tempora facere autem alias doloremque, tenetur.</p>
+            </div>
+            <div class="reviews__author">
+                <img class="reviews__photo" src="https://placehold.it/103/333" alt="">
+                <div class="reviews__name">Edward M. Brooks</div>
+                <div class="reviews__company">Marketing House</div>
+                <div class="reviews__rating">
+                    <img class="reviews__star" src="images/star.svg"  width="13" height="13" alt="">
+                    <img class="reviews__star" src="images/star.svg"  width="13" height="13" alt="">
+                    <img class="reviews__star" src="images/star.svg"  width="13" height="13" alt="">
+                    <img class="reviews__star" src="images/star.svg"  width="13" height="13" alt="">
+                    <img class="reviews__star reviews__star--unactive" src="images/star.svg"  width="13" height="13" alt="">
+                </div>
+            </div>
+        </div><!-- /.reviews__item  -->
+
+    </div><!-- /.container  -->
+</div><!-- /.reviews  -->
+
+<!--News-->
+<section class="news" id="news">
+    <div class="container">
+
+        <div class="news__header">
+            <div class="news__title">Read me</div>
+            <div class="news__text">Sometimes i write something smart</div>
+        </div>
+
+        <div class="articles">
+
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <div class="articles__date">
+                            10 <br> june
+                        </div>
+                        <a href="#">
+                            <img class="articles__photo" src="https://placehold.it/370x257" alt="">
+                        </a>
+                    </div>
+                    <div class="articles__content">
+                        <div class="articles__title">
+                            <a href="#">TEN THE BEST APP IN 2017</a>
+                        </div>
+                        <div class="arcticles__cat">CATEGORY</div>
+                        <div class="articles__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.
+                        </div>
+                    </div>
+                    <a class="btn btn--sm" href="">read more</a>
+                </div>
+            </div>
+
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <div class="articles__date">
+                            10 <br> june
+                        </div>
+                        <a href="#">
+                            <img class="articles__photo" src="https://placehold.it/370x257" alt="">
+                        </a>
+                    </div>
+                    <div class="articles__content">
+                        <div class="articles__title">
+                            <a href="#">TEN THE BEST APP IN 2017</a>
+                        </div>
+                        <div class="arcticles__cat">CATEGORY</div>
+                        <div class="articles__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.
+                        </div>
+                    </div>
+                    <a class="btn btn--sm" href="">read more</a>
+                </div>
+            </div>
+
+            <div class="articles__col">
+                <div class="articles__item">
+                    <div class="articles__header">
+                        <div class="articles__date">
+                            10 <br> june
+                        </div>
+                        <a href="#">
+                            <img class="articles__photo" src="https://placehold.it/370x257" alt="">
+                        </a>
+                    </div>
+                    <div class="articles__content">
+                        <div class="articles__title">
+                            <a href="#">TEN THE BEST APP IN 2017</a>
+                        </div>
+                        <div class="arcticles__cat">CATEGORY</div>
+                        <div class="articles__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.
+                        </div>
+                    </div>
+                    <a class="btn btn--sm" href="">read more</a>
+                </div>
+            </div>
+        </div><!-- /.articles  -->
+
+        <div class="news__footer">
+            <a class="news__link" href="">See more posts</a>
+        </div>
+
+    </div><!-- /.container  -->
+</section><!-- /.news  -->
+
+<!--Footer-->
+<footer class="footer" id="contact">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__content">
+                <div class="footer__rights">© 2018 UI43 - Free Templates</div>
+                <div class="footer__social">
+                    <a href="#" target="_blank">
+                        <img src="images/social/behance-gray.svg" width="24" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/social/dribble-gray.svg" width="18" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/social/linkedin-gray.svg" width="18" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/social/facebook-gray.svg" height="18" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/social/instagram-gray.svg" width="20" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="images/social/twitter-gray.svg" width="20" alt="">
+                    </a>
+                </div>
+            </div>
+            <nav class="footer__nav">
+                <a class="footer__nav-link" href="#" data-scroll="#works">Work</a>
+                <a class="footer__nav-link" href="#" data-scroll="#about">About me</a>
+                <a class="footer__nav-link" href="#" data-scroll="#news">Blog</a>
+                <a class="footer__nav-link" href="#" data-scroll="#contact">Contact</a>
+                <a class="footer__nav-link footer__nav-link--btn" href="#">Hire me</a>
+            </nav>
+        </div><!-- /.footer__inner  -->
+    </div><!-- /.container  -->
+</footer>
+
+<!--Modals-->
+
+<div class="modal" id="project_1">
+    <div class="modal__dialog">
+
+       <button class="modal__close" type="button" data-close>
+           <img src="images/modal_close.svg" alt="">
+       </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/" alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Project title</h3>
+                    <div class="modal-work__info">
+                        category <span class="modal-work__divider">|</span> 2020
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Client:</div>
+                    <div class="modal-work__client-company">Creative agency</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/arrows/left-arrow.svg" height="12" alt="">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="images/arrows/right-arrow.svg" height="12" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /modal-work__content  -->
+        </div><!-- /.modal__work  -->
+
+    </div><!-- /.modal__dialog  -->
+</div><!-- /.modal  -->
+
+<div class="modal" id="project_2">
+    <div class="modal__dialog">
+
+       <button class="modal__close" type="button" data-close>
+           <img src="images/modal_close.svg" alt="">
+       </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/" alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Project title 2</h3>
+                    <div class="modal-work__info">
+                        category <span class="modal-work__divider">|</span> 2020
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Client:</div>
+                    <div class="modal-work__client-company">Creative agency</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/arrows/left-arrow.svg" height="12" alt="">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="images/arrows/right-arrow.svg" height="12" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /modal-work__content  -->
+        </div><!-- /.modal__work  -->
+
+    </div><!-- /.modal__dialog  -->
+</div><!-- /.modal  -->
+
+<div class="modal" id="project_3">
+    <div class="modal__dialog">
+
+       <button class="modal__close" type="button" data-close>
+           <img src="images/modal_close.svg" alt="">
+       </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/" alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Project title 3</h3>
+                    <div class="modal-work__info">
+                        category <span class="modal-work__divider">|</span> 2020
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Client:</div>
+                    <div class="modal-work__client-company">Creative agency</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/arrows/left-arrow.svg" height="12" alt="">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="images/arrows/right-arrow.svg" height="12" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /modal-work__content  -->
+        </div><!-- /.modal__work  -->
+
+    </div><!-- /.modal__dialog  -->
+</div><!-- /.modal  -->
+
+<div class="modal" id="project_4">
+    <div class="modal__dialog">
+
+       <button class="modal__close" type="button" data-close>
+           <img src="images/modal_close.svg" alt="">
+       </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/" alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Project title 4</h3>
+                    <div class="modal-work__info">
+                        category <span class="modal-work__divider">|</span> 2020
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Client:</div>
+                    <div class="modal-work__client-company">Creative agency</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/arrows/left-arrow.svg" height="12" alt="">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="images/arrows/right-arrow.svg" height="12" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /modal-work__content  -->
+        </div><!-- /.modal__work  -->
+
+    </div><!-- /.modal__dialog  -->
+</div><!-- /.modal  -->
+
+<div class="modal" id="project_5">
+    <div class="modal__dialog">
+
+       <button class="modal__close" type="button" data-close>
+           <img src="images/modal_close.svg" alt="">
+       </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/" alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Project title 5</h3>
+                    <div class="modal-work__info">
+                        category <span class="modal-work__divider">|</span> 2020
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Client:</div>
+                    <div class="modal-work__client-company">Creative agency</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/arrows/left-arrow.svg" height="12" alt="">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="images/arrows/right-arrow.svg" height="12" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /modal-work__content  -->
+        </div><!-- /.modal__work  -->
+
+    </div><!-- /.modal__dialog  -->
+</div><!-- /.modal  -->
+
+<div class="modal" id="project_6">
+    <div class="modal__dialog">
+
+       <button class="modal__close" type="button" data-close>
+           <img src="images/modal_close.svg" alt="">
+       </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/" alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Project title 6</h3>
+                    <div class="modal-work__info">
+                        category <span class="modal-work__divider">|</span> 2020
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Client:</div>
+                    <div class="modal-work__client-company">Creative agency</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/arrows/left-arrow.svg" height="12" alt="">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="images/arrows/right-arrow.svg" height="12" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /modal-work__content  -->
+        </div><!-- /.modal__work  -->
+
+    </div><!-- /.modal__dialog  -->
+</div><!-- /.modal  -->
+
+<div class="modal" id="project_7">
+    <div class="modal__dialog">
+
+       <button class="modal__close" type="button" data-close>
+           <img src="images/modal_close.svg" alt="">
+       </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/" alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Project title 7</h3>
+                    <div class="modal-work__info">
+                        category <span class="modal-work__divider">|</span> 2020
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Client:</div>
+                    <div class="modal-work__client-company">Creative agency</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/arrows/left-arrow.svg" height="12" alt="">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="images/arrows/right-arrow.svg" height="12" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /modal-work__content  -->
+        </div><!-- /.modal__work  -->
+
+    </div><!-- /.modal__dialog  -->
+</div><!-- /.modal  -->
+
+<div class="modal" id="project_8">
+    <div class="modal__dialog">
+
+       <button class="modal__close" type="button" data-close>
+           <img src="images/modal_close.svg" alt="">
+       </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/" alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Project title 8</h3>
+                    <div class="modal-work__info">
+                        category <span class="modal-work__divider">|</span> 2020
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Client:</div>
+                    <div class="modal-work__client-company">Creative agency</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/arrows/left-arrow.svg" height="12" alt="">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="images/arrows/right-arrow.svg" height="12" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /modal-work__content  -->
+        </div><!-- /.modal__work  -->
+
+    </div><!-- /.modal__dialog  -->
+</div><!-- /.modal  -->
+
+<div class="modal" id="project_9">
+    <div class="modal__dialog">
+
+       <button class="modal__close" type="button" data-close>
+           <img src="images/modal_close.svg" alt="">
+       </button>
+
+        <div class="modal-work">
+            <div class="modal-work__preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/" alt="">
+                    </div>
+                    <div>
+                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-work__content">
+
+                <div class="modal-work__header">
+                    <h3 class="modal-work__title">Project title 9</h3>
+                    <div class="modal-work__info">
+                        category <span class="modal-work__divider">|</span> 2020
+                    </div>
+                </div>
+
+                <div class="modal-work__client">
+                    <div class="modal-work__client-title">Client:</div>
+                    <div class="modal-work__client-company">Creative agency</div>
+                </div>
+
+                <div class="modal-work__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed necessitatibus, molestiae porro culpa sequi incidunt et quam dolore cum sint animi, iure dignissimos ducimus error illum a deserunt consequatur.</p>
+                </div>
+
+                <div class="modal-work__footer">
+                    <button class="modal-work__btn slickPrev" type="button">
+                        <img src="images/arrows/left-arrow.svg" height="12" alt="">
+                        Previous
+                    </button>
+                    <button class="modal-work__btn slickNext" type="button">
+                        Next
+                        <img src="images/arrows/right-arrow.svg" height="12" alt="">
+                    </button>
+                </div>
+
+            </div><!-- /modal-work__content  -->
+        </div><!-- /.modal__work  -->
+
+    </div><!-- /.modal__dialog  -->
+</div><!-- /.modal  -->
+
+<div class="modal" id="resume">
+    <div class="modal__dialog">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal_close.svg" alt="">
+        </button>
+
+        <div class="modal__content">
+            <div class="modal__title text-center">Resume</div>
+            <div class="text-center">
+                <a class="btn btn--thin" href="#">Download PDF</a>
+                <a class="btn btn--thin" href="#">Print</a>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline__col timeline__col--left">
+                    <h4 class="timeline__title">Experience</h4>
+
+                    <div class="timeline__item">
+                        <div class="timeline__date">2017 - <b>Present</b></div>
+                        <h5 class="timeline__subtitle">Freelancer</h5>
+                        <div class="timeline__position">Art director</div>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aut consequatur dicta quam, voluptatem, provident hic a quae pariatur eveniet sit quibusdam incidunt quos, sequi maiores voluptatibus delectus doloribus. Dolorum!</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__date">2016 - 2017</div>
+                        <h5 class="timeline__subtitle">Good Agency</h5>
+                        <div class="timeline__position">Art director</div>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aut consequatur dicta quam, voluptatem, provident hic a quae pariatur eveniet sit quibusdam incidunt quos, sequi maiores voluptatibus delectus doloribus. Dolorum!</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__date">2014 - 2016</div>
+                        <h5 class="timeline__subtitle">The Best Agency</h5>
+                        <div class="timeline__position">Senior UI/UX Designer</div>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aut consequatur dicta quam, voluptatem, provident hic a quae pariatur eveniet sit quibusdam incidunt quos, sequi maiores voluptatibus delectus doloribus. Dolorum!</p>
+                        </div>
+                    </div>
+                </div><!-- /.timeline__col  -->
+                <div class="timeline__col timeline__col--right">
+                    <h4 class="timeline__title">Education</h4>
+
+                    <div class="timeline__item">
+                        <div class="timeline__date">2005 - 2010</div>
+                        <h5 class="timeline__subtitle">UI/UX Design</h5>
+                        <div class="timeline__position">LA University, USA</div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__date">2002 - 2005</div>
+                        <h5 class="timeline__subtitle">UI/UX Design</h5>
+                        <div class="timeline__position">LA Collage of Art, USA</div>
+                    </div>
+
+                    <h4 class="timeline__title">Skills</h4>
+
+                    <div class="progress-bar">
+                        <div class="progress-bar__item">
+                            <div class="prograss-bar__left">
+                                <div class="progress-bar__title">UI/UX Design</div>
+                            </div>
+                            <div class="prograss-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar__item">
+                            <div class="prograss-bar__left">
+                                <div class="progress-bar__title">JavaScript</div>
+                            </div>
+                            <div class="prograss-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar__item">
+                            <div class="prograss-bar__left">
+                                <div class="progress-bar__title">HTML/CSS</div>
+                            </div>
+                            <div class="prograss-bar__right">
+                                <div class="progress-bar__bar">
+                                    <div class="progress-bar__progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /.progress-bar  -->
+
+                    <h4 class="timeline__title">Awards</h4>
+                    <div class="timeline__item">
+                        <div class="timeline__date">2016</div>
+                        <h5 class="timeline__subtitle">THE BEST WEBSITE</h5>
+                        <div class="timeline__position">UI/UX Design</div>
+                        <div class="timeline__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum aut consequatur dicta quam, voluptatem, provident hic a quae pariatur eveniet sit quibusdam incidunt quos, sequi maiores voluptatibus delectus doloribus. Dolorum!</p>
+                        </div>
+                    </div>
+                </div><!-- /.timeline__col  -->
+            </div><!-- /.timeline  -->
+            <div class="text-center">
+                <a class="btn" href="#" data-modal="#hire_me">Hire me</a>
+            </div>
+        </div><!-- /.modal__content  -->
+
+
+
+
+    </div><!-- /.modal__dialog  -->
+</div><!-- /.modal  -->
+
+<div class="modal" id="hire_me">
+    <div class="modal__dialog modal__dialog--sm">
+
+        <button class="modal__close" type="button" data-close>
+            <img src="images/modal_close.svg" alt="">
+        </button>
+
+        <div class="contact">
+            <div class="contact__left">
+                <div class="modal__title modal__title--sm">Let's talk!</div>
+                <div class="modal__subtitle">Call me or send me a request</div>
+
+                <ul class="contact__info">
+                    <li class="contact__info__item">
+                        <img class="contact__info__icon" src="images/contact/phone-call.svg" alt="" width="23">
+                        (200) 100 3000
+                    </li>
+                    <li class="contact__info__item">
+                        <img class="contact__info__icon" src="images/contact/email.svg" alt="" width="23">
+                        designer@gmail.com
+                    </li>
+                </ul>
+
+                <form action="/" method="post">
+                    <div class="form__group">
+                        <label class="label" for="input__email">Adress e-mail</label>
+                        <input class="input" type="text" name="input_email" id="input__email" placeholder="Adress e-mail">
+                    </div>
+                    <div class="form__group">
+                        <label class="label" for="texarea">Request</label>
+                        <textarea class="textarea" name="input_text" id="texarea" placeholder="Type your request..."></textarea>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn">Send</button>
+                    </div>
+                </form>
+
+            </div><!-- /.contact__left  -->
+            <div class="contact__right"></div>
+        </div><!-- /.contact  -->
+
+    </div><!-- /.modal__dialog  -->
+</div><!-- /.modal  -->
+
+<!-- JS -->
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

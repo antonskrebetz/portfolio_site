@@ -1,0 +1,485 @@
+// main: ../style.less
+
+.modal {
+    padding: 1rem;
+    display: none;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(@black, 0.7);
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    &.show {
+        display: flex;
+    }
+}
+
+.modal__dialog {
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+
+    position: relative;
+
+    background-color: @white;
+
+    &--sm {
+        max-width: 900px;
+    }
+
+}
+
+.modal__close {
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+
+    transition: transform 0.1s linear;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        transform: rotate(90deg);
+    }
+}
+
+.modal-work {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.modal-work__preview {
+    position: relative;
+    width: 65%;
+
+    overflow: hidden;
+
+    @media @tablet {
+        padding: 2rem;
+        padding-bottom: 0;
+        width: 100%;
+        height: 500px;
+    }
+
+    @media @mobile-sm {
+        padding: 1rem;
+        padding-bottom: 0;
+    }
+}
+
+.modal-work__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.modal-work__content {
+    position: relative;
+    padding: 3.4rem 6.6rem 1rem 1.7rem;
+    width: 35%;
+
+    @media @tablet {
+        padding: 2rem;
+        width: 100%;
+    }
+
+    @media @mobile-sm {
+        padding: 1rem;
+    }
+}
+
+.modal-work__header {
+    margin-bottom: 2.2rem;
+
+    @media @mobile-sm {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+
+.modal-work__title {
+    margin-bottom: 0.2rem;
+    font-size: 2.1rem;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.modal-work__info {
+    font-size: 1.2rem;
+    color: @grey;
+    text-transform: uppercase;
+}
+
+.modal-work__divider {
+    margin: 0 1rem;
+}
+
+.modal-work__client {
+    margin-bottom: 2.2rem;
+
+    @media @mobile-sm {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.modal-work__client-title {
+    margin-bottom: 0.2rem;
+    font-size: 1.06rem;
+    color: @black;
+    font-weight: 700;
+}
+
+.modal-work__client-company {
+    font-size: 0.94rem;
+    font-style: italic;
+    color: @grey;
+}
+
+.modal-work__text {
+    margin-bottom: 8.6rem;
+    font-size: 0.8rem;
+    color: @grey;
+    font-weight: 300;
+    line-height: 2;
+
+    @media @tablet {
+        margin-bottom: 3rem;
+    }
+
+    @media @mobile-sm {
+        margin-bottom: 2rem;
+    }
+}
+
+.modal-work__footer {
+    padding: 0 1.8rem 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    @media @mobile-sm {
+        padding: 0 1rem 1rem;
+    }
+}
+
+.modal-work__btn {
+    padding: 0;
+    font-family: inherit;
+    font-size: 0.94rem;
+    color: @black;
+    text-transform: uppercase;
+
+    background: none;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.modal__content {
+    padding: 5rem 1rem;
+
+    @media @mobile {
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        max-width: 500px;
+    }
+}
+
+.modal__title {
+    margin-bottom: 3.5rem;
+    font-size: 3rem;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &--sm {
+        margin-bottom: 0;
+    }
+
+    @media @mobile-sm {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.modal__subtitle {
+    font-size: 1.06rem;
+    color: @black;
+    text-transform: uppercase;
+
+    @media @mobile-sm {
+        font-size: 0.8rem;
+    }
+}
+
+
+//-----------Timeline
+
+.timeline {
+    margin: 4.2rem auto;
+    display: flex;
+    width: 100%;
+    max-width: 768px;
+
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        background: @black;
+        position: absolute;
+        top: 0;
+        left: 50%;
+
+        @media @mobile {
+            display: none;
+        }
+    }
+
+    @media @mobile {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    @media @mobile-sm {
+        margin-top: 2rem;
+    }
+}
+
+.timeline__col {
+    width: 50%;
+
+    &--left {
+        padding-right: 3.2rem;
+        text-align: right;
+    }
+
+    @media @mobile {
+        margin-bottom: 2.5rem;
+        padding-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    &--right {
+        padding-left: 3.2rem;
+    }
+
+    @media @mobile {
+        margin-bottom: 0;
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.timeline__title {
+    margin-bottom: 2.5rem;
+    font-size: 1.2rem;
+    color: @black;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.timeline__item {
+    margin-bottom: 2.6rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.timeline__date {
+    margin-bottom: 0.8rem;
+    font-size: 0.94rem;
+    color: @black;
+    text-decoration: underline;
+}
+
+.timeline__subtitle {
+    margin-bottom: 0.2rem;
+    font-size: 1.06rem;
+    color: @black;
+    font-weight: 700;
+}
+
+.timeline__position {
+    font-size: 0.94rem;
+    color: @black;
+    font-style: italic;
+}
+
+.timeline__text {
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+    color: @grey;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+
+//-----------Progress-bar
+
+.progress-bar {
+    margin-bottom: 2.6rem;
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.progress-bar__item {
+    margin-bottom: 0.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar__title {
+    min-width: 100px;
+    font-size: 0.94rem;
+    font-weight: 300;
+}
+
+.prograss-bar__right {
+    padding-left: 1.2rem;
+}
+
+.progress-bar__bar {
+    width: 140px;
+    height: 6px;
+    background: #efefef;
+}
+
+.progress-bar__progress {
+    height: 100%;
+    background: @grey;
+
+    transition: width 0.3s linear;
+}
+
+//-----------Contact
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media @mobile {
+        margin: 0 auto;
+        max-width: 500px;
+    }
+}
+
+.contact__left {
+    padding: 2rem;
+    width: 47%;
+
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+.contact__right {
+    width: 53%;
+    background: @black url(https://placehold.it/477x700) center no-repeat;
+
+    @media @mobile {
+        display: none;
+    }
+}
+
+.contact__info {
+    margin: 2rem 0 3rem;
+    padding: 0;
+    list-style: none;
+
+    font-size: 0.94rem;
+    color: @black;
+    font-weight: 300;
+}
+
+.contact__info__icon {
+    margin-right: 1rem;
+}
+
+.contact__info__item {
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+//-----------Label
+
+.form__group {
+    margin-bottom: 1.8rem;
+}
+
+.label {
+    margin-bottom: 0.6rem;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: @black;
+    font-weight: 700;
+}
+
+.input,
+.textarea {
+    padding: 1.3rem 1.8rem;
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-size: 0.8rem;
+    color: @black;
+    font-weight: 300;
+    line-height: 1.2;
+
+    border: 1px solid rgba(#707070, 0.3);
+    transition: border-color 0.2s linear;
+
+    &:focus {
+        outline: 0;
+        border-color: #666666;
+    }
+
+    &::placeholder {
+        color: @black;
+    }
+}
+
+.textarea {
+    height: 200px;
+    resize: none;
+}
